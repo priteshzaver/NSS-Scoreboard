@@ -1,35 +1,23 @@
-# scoreboard
+# Create a simple Scoreboard
 
-This template should help get you started developing with Vue 3 in Vite.
+For this project, create a scoreboard for two teams with `+` and `-` buttons and display the currently leading team.
 
-## Recommended IDE Setup
+[**View a Demo**](https://nss-vue-scoreboard.web.app/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Part 1
 
-## Customize configuration
+- Display a header saying Team 1 vs Team 2 (feel free to name these something else)
+- Below the header display a score card for each team which shows the team's current score, along with `+` and `-` buttons that increments and decrements the team's score. The score should not be allowed to go below zero
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Part 2
 
-## Project Setup
+- The name of the currently leading team in the top header should be highlighted
 
-```sh
-npm install
-```
+## Part 3
 
-### Compile and Hot-Reload for Development
+- Add a subheader below the header to say how great the lead is (e.g. "Team 1 is leading by 5 points"). If the game is tied, the subheader should say "The game is currently tied"
+  - Use correct pluralization (i.e. "leading by 1 point" or "leading by 10 points")
 
-```sh
-npm run dev
-```
+#### Stuck?
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Need help? Try the [Code by Numbers](./scoreboard_CBN.md)
