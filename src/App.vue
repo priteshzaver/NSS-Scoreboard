@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import MatchupTitle from './components/MatchupTitle.vue'
 import ScoreCard from './components/ScoreCard.vue'
+import GameStatus from './components/GameStatus.vue'
 
 const team1 = ref({
   name: 'Team 1',
@@ -24,6 +25,7 @@ const addPoint = (team) => {
 
 <template>
   <MatchupTitle :team1="team1" :team2="team2" />
+  <GameStatus :team1="team1" :team2="team2" />
   <div>
     <ScoreCard :team="team1" @minus="minusPoint(team1)" @plus="addPoint(team1)" />
     <ScoreCard :team="team2" @minus="minusPoint(team2)" @plus="addPoint(team2)" />
